@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-JS</title>
+</head>
+<body>
+    <form>
+        <label for="campoA">Campo A:</label>
+        <input type="number" id="campoA" name="campoA">
+        <br>
+        <label for="campoB">Campo B:</label>
+        <input type="number" id="campoB" name="campoB">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="mansagem" id="mensagem"></div>
+    <script>
+    const form = document.querySelector('form');
+    const campoA = document.querySelector('#campoA');
+    const campoB = document.querySelector('#campoB');
+    const mensagem = document.querySelector('#mensagem');
+
+    form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    if (campoB.value > campoA.value) {
+        mensagem.textContent = "Formulário enviado!";
+        mensagem.style.color = "green";
+    } else {
+        mensagem.textContent = "Formulário inválido!";
+        mensagem.style.color = "red";
+    }
+    });
+</script>
+    
+</body>
+</html>
