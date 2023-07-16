@@ -1,32 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Bootstrap</title>
+    <title>Página do Richard</title>
+    <link rel="stylesheet" href="build/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,100&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
-        <div class="row d-flex justify-content-end">
-            <div class="col">
-                <h2>Entre em contato</h2>
-                <form action="">
-                    <label class="form-label" for="nome">Seu Nome:</label>
-                    <input class="form-control " type="text" id="nome">
-                    <label for="email" class="form-label">Seu Email:</label>
-                    <input class="form-control" type="email" id="email">
-                    <label class="form-label" for="tel">Seu Telefone:</label>
-                    <input class="form-control " type="number" id="tel">
-                    <div class="form-check form-switch">
-                    </div>
-                    <button class="btn btn-success">Enviar</button>
-                </form>
+        <header>
+            <img class="profile-avatar" src="./src/images/foto perfil.png">
+            <div class="profile-bio">
+                <h1 class="profile-bio-name">Página do Richard</h1>
+                <h2 class="profile-bio-subtitle">Desenvolvedor Full stack</h2>
+                <p class="profile-bio-description">Sou um apaixonado por tecnologia, estudante de programação e obcecado por códigos, separei este lugar para deixar alguns de meus projetos!</p>
             </div>
-        </div>
+        </header>
+        <nav>
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com/dev_skyy/">
+                    <img src="./src/images/instagram.svg" alt="Logo Instagram">
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/richard-freitas-dev/">
+                    <img src="./src/images/linkedin.svg" alt="Logo Linkedin">
+                </a></li>
+                <li><a href="https://github.com/RichardFFreitas">
+                    <img src="./src/images/github.svg" alt="Logo Github">
+                </a></li>
+                <li><a href="mailto:richardfelipelives@gmail.com">
+                    <img src="./src/images/at-sign.svg" alt="Email">
+                </a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="projects-list">
+                <li class="projects-list-item">
+                    <a href="https://projeto-calculadora-medias-rust.vercel.app/?vercelToolbarCode=LzOzcnPIwe_HnZ5">
+                        Visite o projeto "Calculadora de médias"
+                    </a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://galeria-fotos-sable.vercel.app/?vercelToolbarCode=fmyc863bVRflUNq">
+                        Visite o projeto "Galeria de fotos"
+                    </a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://exercicio-bootstrap-2.vercel.app/?vercelToolbarCode=Tb-lQKa8XKJjGwK">
+                        Visite o projeto "Top Games"
+                    </a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://cursewitch.com.br">
+                        Visite o projeto "Curse Witch"
+                    </a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://lista-tarefas-mu.vercel.app/?vercelToolbarCode=dgIWB9CQdvlJhS7">
+                        Visite o projeto "Lista de Tarefas"
+                    </a>
+                </li>
+                <li class="projects-list-item">
+                    <a href="https://projeto-bootstrap-jet.vercel.app/?vercelToolbarCode=Yxfu0XLe4WdE8WQ">
+                        Visite o projeto "Rony Pizzaria"
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
